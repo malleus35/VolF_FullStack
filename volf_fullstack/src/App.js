@@ -8,6 +8,14 @@ import EditNotice from './components/edit-notice.component.js';
 import CreateNotice from './components/create-notice.component.js';
 import CreateUser from './components/create-user.component.js';
 
+import MyNavbar from './mycomponents/mynavbar.component.js';
+import MyMain from './mycomponents/mymain.component.js';
+import MyIntroduce from './mycomponents/myintroduce.component.js';
+import MyNotice from './mycomponents/mynotice.component.js';
+import MyStory from './mycomponents/mystory.component.js';
+import MyFaq from './mycomponents/myfaq.component.js';
+import MyAdmin from './mycomponents/myadmin.component.js';
+
 function App() {
   return (
     <Router>
