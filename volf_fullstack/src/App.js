@@ -2,12 +2,6 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Navbar from './components/navbar.component.js';
-import NoticeList from './components/notice-list.component.js';
-import EditNotice from './components/edit-notice.component.js';
-import CreateNotice from './components/create-notice.component.js';
-import CreateUser from './components/create-user.component.js';
-
 import MyNavbar from './mycomponents/mynavbar.component.js';
 import MyMain from './mycomponents/mymain.component.js';
 import MyIntroduce from './mycomponents/myintroduce.component.js';
@@ -20,12 +14,13 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <Navbar />
+        <MyNavbar />
         <br />
-        <Route path="/" exact component={NoticeList} />
-        <Route path="/edit:id" component={EditNotice} />
-        <Route path="/create" component={CreateNotice} />
-        <Route path="/user" component={CreateUser} />
+        <Route path="/" exact component={MyMain} />
+        <Route path="/introduce" component={MyIntroduce} />
+        <Route path="/notice" component={MyNotice} />
+        <Route path="/story" component={MyStory} />
+        <Route path="/faq" component={MyFaq} />
       </div>
     </Router>
   );
